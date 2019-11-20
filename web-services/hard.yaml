@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx_lb:
+    container_name: load_balancer
+    image: 'edbighead/nginx:medium'
+    ports:
+      - '8081:80'
+  nginx_1:
+    container_name: nginx_1
+    image: 'edbighead/nginx:medium'
+  nginx_2:
+    container_name: nginx_2
+    image: 'edbighead/nginx:medium'

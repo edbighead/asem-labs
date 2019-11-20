@@ -1,0 +1,18 @@
+FROM nginx:1.17.6
+
+RUN apt-get update && apt-get install -y \
+    vim \
+    && mkdir /mnt/images \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /etc/nginx/conf.d
+
+COPY website /opt/data/website
+COPY conf.d /etc/nginx/conf.d
+
+RUN mkdir -p /mnt/assets && mv /opt/data/website/img /mnt/assets/img
+
+EXPOSE 80
+
+STOPSIGNAL SIGTERM
+
+CMD ["nginx", "-g", "daemon off;"]

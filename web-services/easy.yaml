@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  nginx:
+    container_name: nginx_easy
+    image: 'edbighead/nginx:simple'
+    ports:
+      - '8081:80'
