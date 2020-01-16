@@ -24,6 +24,7 @@ Fork the following repository [java-spring-sample-app](https://github.com/edbigh
 * Setup pull request workflow to run on different java versions (8.0.192, 9.0.x, 10). Hint: use [matrix](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions#jobsjob_idstrategymatrix)
 * Setup maven dependency caching with [cache action](https://github.com/actions/cache/blob/master/examples.md#java---maven)
 * Look for any other actions on [marketplace](https://github.com/marketplace?type=actions)
+  * Publish docker image
   * Send telegram notification
   * Send slack notification
   * Post twitter message
