@@ -39,3 +39,6 @@ GitHub runs your CI tests and provides the results of each test in the pull requ
 ### [Using environment variables](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables)
 ### [Authenticating with the GITHUB_TOKEN](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/authenticating-with-the-github_token)
 ### [Caching dependencies to speed up workflows](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/caching-dependencies-to-speed-up-workflows)
+
+
+### More info: [GitHub Actions Advent Calendar](https://www.edwardthomson.com/blog/github_actions_advent_calendar.html)
