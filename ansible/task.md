@@ -12,6 +12,9 @@ Fork the following repository [asem-labs-ansible](https://github.com/edbighead/a
 * Create `/etc/ansible/hosts` [hosts file](https://docs.ansible.com/ansible/2.4/intro_inventory.html#hosts-and-groups) on **master** and add **node-1** and **node-2** container names to it.
 * From **master** container, run the following command to test connectivity `ansible all -m ping`
 
+### Verifying
+Run `curl http://node-1` from master node to check your deployed website.
+
 ### Writing playbooks
 You can test your changes with the following command: `ansible-playbook playbook.yml`
 
